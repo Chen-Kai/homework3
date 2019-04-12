@@ -1,12 +1,12 @@
-package kotlin
+package com.kai
 
 import java.util.*
 
 fun main() {
     val scanner = Scanner(System.`in`)
-    var length:Float
-    var width:Float
-    var height:Int
+    var length: Float
+    var width: Float
+    var height: Int
     val box3 = Box3()
     val box5 = Box5()
     while(true){
@@ -32,7 +32,7 @@ class Box3(){
     val length = 23f
     val width = 14f
     val heigth = 13
-    fun validate(length:Float, width:Float, heigth:Int) :Boolean{
+    fun validate(length: Float, width: Float, heigth: Int) : Boolean {
         if(length < this.length && width < this.width && heigth < this.heigth)
             return true
         else return false
@@ -43,7 +43,7 @@ class Box5(){
     val length = 39.5f
     val width = 27.5f
     val heigth = 23
-    fun validate(length:Float, width:Float, heigth:Int) :Boolean{
+    fun validate(length: Float, width: Float, heigth: Int) : Boolean {
         if( length< this.length && width< this.width && heigth< this.heigth)
             return true
         else return false
